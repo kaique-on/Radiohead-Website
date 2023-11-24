@@ -1,4 +1,7 @@
 @import url('./carousel.css');
+@import url('./footer.css');
+@import url('./produtos.css');
+
 @font-face {
     font-family: 'Radiohead';
     src: url(fonts/Type\ Juice\ -\ Unison\ Pro\ Bold.otf) format('opentype');
@@ -8,11 +11,19 @@
     src: url(fonts/Type\ Juice\ -\ Unison\ Pro\ Light\ Round\ Italic.otf) format('opentype');
 }
 
+header{
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+}
 .navbar-brand{
     margin: 0;
     background-color: #FFFFFF;
 }
-
+#carousel{
+    margin-top: 56px;
+}
 body {
     background-image: url(./images/fundo_rainbows.png);
     background-repeat: no-repeat;
@@ -241,4 +252,31 @@ button#kid-a1.accordion-button {
 }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 #moon-shaped2 {
     background-color: #fbfbfd;
+}
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }

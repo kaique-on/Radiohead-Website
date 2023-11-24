@@ -1,3 +1,4 @@
+@import url('./carousel.css');
 @font-face {
     font-family: 'Radiohead';
     src: url(fonts/Type\ Juice\ -\ Unison\ Pro\ Bold.otf) format('opentype');
@@ -16,7 +17,7 @@ body {
     background-image: url(./images/fundo_rainbows.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     max-width: 100vw;
     min-height: 100vh;
     height: 100%;
@@ -25,6 +26,8 @@ body {
 .accordion-body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 main {
     margin: auto;
     width: fit-content;
@@ -33,7 +36,7 @@ main {
 .accordion {
     margin: 100px auto;
     background-color: transparent;
-    width: 600px;
+    width: 650px;
     border: transparent;
 }
 .accordion-collapse img {
@@ -64,10 +67,16 @@ button#kid-a1.accordion-button {
 .show {
     background-color: transparent;
 }
-
+#pablo-honey1.accordion-button.collapsed{
+    background-image: url('./images/pablo-honey.jpg');
+    background-position: center;
+    background-size: 120%;
+    color: #14237a;
+}
 #pablo-honey1 {
     background-color: #f0cb24;
-    color: black;
+    color: #14237a;
+    box-shadow: none;
 }
 
 #pablo-honey2 {
@@ -79,11 +88,16 @@ button#kid-a1.accordion-button {
     font: 600;
 }
 
-
+#the-bends1.accordion-button.collapsed{
+    background-image: url('./images/the\ bends.jpg');
+    background-position: 10% 3%;
+    background-size: 100%;
+}
 #the-bends1 {
     background-color: #f1d99e;
     color: #cc1522;
     font-weight: 600;
+    box-shadow: none;
 }
 
 #the-bends2 {
@@ -91,11 +105,16 @@ button#kid-a1.accordion-button {
     color: white;
 }
 
-
+#ok-computer1.accordion-button.collapsed{
+    background-image: url('./images/Ok\ Computer.jpg');
+    background-position: 50% 25%;
+    background-size: 100%;
+}
 #ok-computer1 {
-    background-color: #efffff;
+    background-color: white;
     color: #000;
     font-weight: 600;
+    box-shadow: none;
 }
 
 #ok-computer2 {
@@ -107,31 +126,46 @@ button#kid-a1.accordion-button {
     padding: 0;
 }
 
-
+#kid-a1.accordion-button.collapsed{
+    background-image: url('./images/Kid\ A.jpg');
+    background-position: 50% 32%;
+    background-size: 100%;
+}
 #kid-a1 {
     background-color: #010101;
     color: white;
     font-weight: 600;
+    box-shadow: none;
 }
 
 #kid-a2 {
-    background-color: white;
-    color: #0667bb;
+    background-color: black;
+    color: white;
 }
-
+#amnesiac.accordion-button.collapsed{
+    background-image: url('./images/Amnesiac.jpg');
+    background-position: 50% 49%;
+    background-size: 110%;
+}
 #amnesiac {
-    background-color: #e93e2d;
+    background-color: #d5464a;
     color: #f0eced;
+    box-shadow: none;
 }
 
 #amnesiac-2 {
     background-color: #313133; 
-    color: #e93e2d;
+    color: #eaeaea;
 }
-
+#hail-to-thief.accordion-button.collapsed{
+    background-image: url('./images/Hail\ to\ the\ Thief.jpg');
+    background-position: 50% 18%;
+    background-size: 100%;
+}
 #hail-to-thief{
     background-color: #a2bfd3;
     color: black;
+    box-shadow: none;
 
 }
 #hail-to-thief-2 strong{
@@ -142,12 +176,66 @@ button#kid-a1.accordion-button {
     background-color: #1f4429;
     color: white;
 }
+
+
+#king-of-limbs.accordion-button.collapsed{
+    background-image: url('./images/The\ King\ of\ Limbs.jpg');
+    background-size: 150%;
+    color: black;
+    background-position: 50% 15%;
+}
 #king-of-limbs{
-    background-color: #4d5d30;
-    color: #d8b42c;
+    box-shadow: none;
+    background-color: #514e4c;
+    color: #efab36;
+}
+#king-of-limbs-2{
+    background-color: #a68a3e;
+    color: #eaeaea;
 }
 
-#in-rainbows1 {
+#in-rainbows1.accordion-button.collapsed {
     color: #f36525;
-    background-color: black;
+    background-image: url('../images/fundo_rainbows.png'); 
+    background-position: center;
+    background-size: 100%;
+}
+#in-rainbows1{
+    background-color: #0a080f;
+    color: #f36525;
+}
+#in_rainbows2 {
+    background-color: #0a080f;
+
+}
+
+#strong-rainbows {
+    color: #f6ed4a;
+}
+#span1 {
+    color: #4686c6;
+}
+#span2 {
+    color: #f36525;
+}
+#span3 {
+    color: #45b64a;
+}
+#span4 {
+    color: #eb2326;
+}
+#span5 {
+    color: #a3dce7;
+}
+#moon-shaped1.accordion-button.collapsed{
+    background-image: url('./images/A\ Moon\ Shaped\ Pool.jpg');
+    background-size: 150%;
+    background-position: 50% 20%;
+}
+#moon-shaped1 {
+    box-shadow: none;
+    background-color: white;
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+#moon-shaped2 {
+    background-color: #fbfbfd;
 }

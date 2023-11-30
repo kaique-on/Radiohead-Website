@@ -11,40 +11,40 @@
 
 <body>
   <header>
-    <nav id="nav-font" class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">RADIOHEAD</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#texto-banda">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Merchandise</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ALBUMS
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#pablo-honey1">PABLO HONEY</a></li>
-                <li><a class="dropdown-item" href="#the-bends1">THE BENDS</a></li>
-                <li><a class="dropdown-item" href="#ok-computer1">OK COMPUTER</a></li>
-                <li><a class="dropdown-item" href="#in-rainbows1">IN RAINBOWS</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+    <nav id="nav-font" class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important; padding: 12px;">
+      <div id="itens-nav" class="container-fluid">
+        <button id="logo" class="navbar-brand" href="#">RADIOHEAD</button>
+        
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#texto-banda">Sobre a banda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              ALBUMS
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#pablo-honey1">PABLO HONEY</a></li>
+              <li><a class="dropdown-item" href="#the-bends1">THE BENDS</a></li>
+              <li><a class="dropdown-item" href="#ok-computer1">OK COMPUTER</a></li>
+              <li><a class="dropdown-item" href="#in-rainbows1">kid a</a></li>
+              <li><a class="dropdown-item" href="#in-rainbows1">amnesiac</a></li>
+              <li><a class="dropdown-item" href="#in-rainbows1">hail to the thief</a></li>
+              <li><a class="dropdown-item" href="#in-rainbows1">IN RAINBOWS</a></li>
+              <li><a class="dropdown-item" href="#in-rainbows1">the king of limbs</a></li>
+              <li><a class="dropdown-item" href="#in-rainbows1">a moon shaped pool</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          
+        </ul>
       </div>
     </nav>
   </header>
-  <section id="carousel">
+  
+  <section id="carousel-top">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div id="inner" class="carousel-inner">
         <div class="carousel-item active">
@@ -69,13 +69,16 @@
 
     <div id="texto-banda">
       <h1>Sobre a Banda</h1>
-      <p></p>
+      <p class="texto-p">Formada em 1985, o Radiohead é uma banda britânica icônica que ultrapassa os limites do rock alternativo. De "Creep" em "Pablo Honey" (1993) a "OK Computer" (1997), eles conquistaram reconhecimento crítico ao explorar as complexidades da sociedade moderna
+        Inovadores na indústria musical, o Radiohead desafia normas com lançamentos independentes, como o revolucionário "In Rainbows" (2007). As letras profundas de Thom Yorke abordam temas como alienação e política, elevando a experiência musical
+        Com shows lendários, a banda fusiona músicas antigas e novas, oferecendo uma experiência imersiva única. O Radiohead deixou um legado duradouro, influenciando gerações e consolidando-se como uma das bandas mais importantes e autênticas do rock.</p>
     </div>
 </section>
 
 <main>
 
 
+  <h1>Álbuns</h1>
     <div class="accordion" id="accordionPanelsStayOpenExample">
 
         <div class="accordion-item">
@@ -95,7 +98,9 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button id="the-bends1" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <div class="texto-the-bends">
               The Bends
+            </div>
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
@@ -219,54 +224,54 @@
           data-flickity='{ "freeScroll": true }'>
 
           <div id="cartao" class="card">
-  <div class="tamanho-imagem">
-    <img id="imagem-produto" src="./images/vinil-kidamnesia.webp" class="card-img-top" alt="...">
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+            <div class="tamanho-imagem">
+              <img id="imagem-produto" src="./images/vinil-kidamnesia.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <div class="textos-produtos">
+              <div class="espacamento-produtos">
+                <h5 class="card-title">Kid Vinil CD Triplo</h5>
+              <p class="card-text">Três discos contendo KID A e Amnesiac, junto com KID AMNESIA. 12 faixas de sessões e materiais inéditos, tudo incluído em um pacote de arte dobrável.</p>
+              </div>
+            </div>
+              <a href="#" class="btn btn-primary">Conferir produto</a>
+            </div>
+          </div>
 
           <div id="cartao" class="card">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+            <div class="tamanho-imagem">
+              <img id="imagem-produto" src="./images/against-demons.png" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <div class="textos-produtos">
+              <div class="espacamento-produtos">
+                <h5 class="card-title">Cobertor Against Demons</h5>
+              <p class="card-text">Manta 100% algodão, escrito 'Against Demons' e borlas pretas nas bordas.</p>
+              </div>
+            </div>
+              <a href="#" class="btn btn-primary">Conferir produto</a>
+            </div>
+          </div>
 
           <div id="cartao" class="card">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+            <div class="tamanho-imagem">
+              <img id="imagem-produto" src="./images/camiseta.webp" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <div class="textos-produtos">
+              <div class="espacamento-produtos">
+                <h5 class="card-title">Camiseta This Is Really Happening</h5>
+              <p class="card-text">Camiseta feminina justa cinza escuro com estampa na frente e nas costas. Camiseta 100% algodão.</p>
+              </div>
+            </div>
+              <a href="#" class="btn btn-primary">Conferir produto</a>
+            </div>
+          </div>
 
-          <div id="cartao" class="card">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-          <div id="cartao" class="card">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>        
+          </div>        
 </section>
     </main>
+
     <footer>
       <h1>CONTATO</h1>
       <div class="container-footer">
@@ -280,19 +285,19 @@
         </div>
         <div class="items-footer">
           <h1>DESENVOLVEDORES</h1>
-          <h2>Kaique Nascimento de Oliveira <a class="link_contato" href="https://github.com/kaique-on"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <a class="link_contato" href="https://github.com/kaique-on"><h2>Kaique Nascimento de Oliveira <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
           </svg></a></h2>
-          <h2>Davi Silva Valadão   <a class="link_contato" href="https://github.com/valadao-davi"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <a class="link_contato" href="https://github.com/valadao-davi"><h2>Davi Silva Valadão   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
           </svg></a></h2>
         </div>
         <div class="items-footer">
           <h1>SOCIAL</h1>
-          <h2>Twitter   <a class="link_contato" href="https://twitter.com/radiohead"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+           <a class="link_contato" href="https://twitter.com/radiohead"><h2>Twitter  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15"/>
           </svg></a></h2>
-          <h2>Spotify   <a class="link_contato" href="https://open.spotify.com/intl-pt/artist/4Z8W4fKeB5YxbusRsdQVPb"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+          <a class="link_contato" href="https://open.spotify.com/intl-pt/artist/4Z8W4fKeB5YxbusRsdQVPb"><h2>Spotify   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
           </svg></a></h2>
         </div>
